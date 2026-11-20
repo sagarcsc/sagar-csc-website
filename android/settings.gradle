@@ -1,0 +1,6 @@
+pluginManagement { repositories { google(); mavenCentral(); gradlePluginPortal() } }
+dependencyResolutionManagement { repositoriesMode.set(RepositoriesMode.FAIL_ON_PROJECT_REPOS); repositories { google(); mavenCentral() } }
+rootProject.name = 'SagarCSCApps'
+include ':customer', ':admin'
+project(':customer').projectDir = file('customer')
+project(':admin').projectDir = file('admin')
