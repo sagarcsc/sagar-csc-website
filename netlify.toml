@@ -5,13 +5,18 @@
 [functions]
   node_bundler = "esbuild"
 
-# Keep the admin interface on a dedicated route, separate from the customer homepage.
+# Dedicated admin routes
+[[redirects]]
+  from = "/admin-access.html"
+  to = "/admin-site/index.html"
+  status = 200
+
 [[redirects]]
   from = "/admin"
-  to = "/admin-site/"
-  status = 301
+  to = "/admin-site/index.html"
+  status = 200
 
 [[redirects]]
   from = "/admin.html"
-  to = "/admin-site/"
-  status = 301
+  to = "/admin-site/index.html"
+  status = 200
