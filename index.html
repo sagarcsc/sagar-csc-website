@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>SAGAR CSC | Online Services</title>
+  <meta name="description" content="SAGAR CSC online services and application assistance.">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="header">
+    <div class="wrap header-inner">
+      <a class="brand" href="#"><span class="logo">SC</span><span>SAGAR <small>CSC</small></span></a>
+      <a class="call" href="tel:9938333442">Call: 9938333442</a>
+    </div>
+  </header>
+  <main>
+    <section class="hero wrap">
+      <div class="hero-copy">
+        <span class="eyebrow">Digital assistance • Online services</span>
+        <h1>Your online services,<br><em>made simple.</em></h1>
+        <p>Apply, request assistance and submit your service order online with SAGAR CSC.</p>
+        <a class="primary" href="#services">Explore services</a>
+      </div>
+      <div class="hero-card"><div class="orb">CSC</div><h3>Digital Services</h3><p>Friendly help for forms, documents and online applications.</p></div>
+    </section>
+    <section class="wrap section" id="services">
+      <div class="section-heading"><div><span class="eyebrow">Choose a service</span><h2>Services</h2></div><p>Service fees are confirmed before payment.</p></div>
+      <div id="service-grid" class="grid"></div>
+    </section>
+    <section class="wrap section order-section" id="order">
+      <div class="section-heading"><div><span class="eyebrow">Request assistance</span><h2>Place an order</h2></div></div>
+      <form id="order-form" class="form">
+        <label>Full name<input name="name" required maxlength="100" autocomplete="name" placeholder="Your name"></label>
+        <label>Mobile number<input name="phone" required maxlength="15" inputmode="tel" placeholder="Your mobile number"></label>
+        <label>Service<select name="service" id="service-select" required><option value="">Select a service</option></select></label>
+        <label>Fee (₹)<input name="amount" id="amount" required type="number" min="1" step="1" placeholder="Confirm fee with CSC"></label>
+        <p class="hint">The fee is set/confirmed by SAGAR CSC. Do not pay until the service and amount are confirmed.</p>
+        <button class="primary full" type="submit">Continue to payment</button>
+        <p id="status" role="status" class="status"></p>
+      </form>
+    </section>
+    <section class="wrap section info">
+      <h2>Need help?</h2><p>Call or WhatsApp <a href="tel:9938333442">9938333442</a> to confirm service availability and charges.</p>
+    </section>
+  </main>
+  <footer><div class="wrap footer-inner"><span>© <span id="year"></span> SAGAR CSC</span><span>Online service assistance</span></div></footer>
+  <script src="https://checkout.razorpay.com/v1/checkout.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
