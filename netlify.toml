@@ -4,19 +4,3 @@
 
 [functions]
   node_bundler = "esbuild"
-
-# Dedicated admin routes
-[[redirects]]
-  from = "/admin-access.html"
-  to = "/admin-site/index.html"
-  status = 200
-
-[[redirects]]
-  from = "/admin"
-  to = "/admin-site/index.html"
-  status = 200
-
-[[redirects]]
-  from = "/admin.html"
-  to = "/admin-site/index.html"
-  status = 200
